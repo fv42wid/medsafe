@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Med</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="h-header header">
+    <div class="container clearfix nopadding">
+      <div id="logo">
+        <%= image_tag "logo.png" %>
+      </div>
+      <div class="menu-button h-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav h-nav clearfix">
+        <ul class="menu">
+          <li class="active">
+            <a href="#home" class="scroll-to-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="scroll-to-link">About</a>
+          </li>
+          <li>
+            <a href="#services" class="scroll-to-link">Services</a>
+          </li>
+          <li>
+            <a href="#pricing" class="scroll-to-link">Pricing</a>
+          </li>
+          <li>
+            <a href="#privacy" class="scroll-to-link">Privacy Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="body-innerwrapper">
+    <section id="sp-main-body">
+      <div class="row">
+        <div id="sp-component" class>
+          <div class="sp-column">
+            <div id="system-message-container"></div>
+            <div id="sp-page-builder" class="sp-page-builder page-1">
+              <div class="page-content">
+                <section class="sppb-section" style>
+                  <div class>
+                    <div class>
+                      <div class="sppb-addon-container" style data-sppb-wow-duration="300ms">
+                        <div class="h-banner scroll-to-block">
+                          <div class="swiper-container initialized" data-slides-per-view="1" data-loop="1" data-mode="horizontal" data-init="unique-id-0">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide background-parent swiper-slid-duplicate" style="background-image: url(<%= asset_url 'banner1.jpg' %>)">
+                                <h2>
+                                  We<br>care about<br>your life
+                                </h2>
+                              </div>
+                            </div>
+                            <div class="pagination pagination-hide pagination-h pagination-unique-id-0">
+                              <span class="swiper-pagination-switch"></span>
+                              <span class="swiper-pagination-switch"></span>
+                              <span class="swiper-pagination-switch"></span>
+                              <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
+                            </div>
+                          </div>
+                          <div class="container">
+                            <div class="h-banner-nav clearfix">
+                              <div class="h-banner-nav-item">
+                                <%= image_tag "info-ico1.png" %>
+                                <h3>Heart Rate</h3>
+                                <p>Morbi censequat lorem vel leo aliquet, id accumsan felis.</p>
+                              </div>
+                              <div class="h-banner-nav-item">
+                                <%= image_tag "info-ico2.png" %>
+                                <h3>Lab Test</h3>
+                                <p>Morbi consequat lorem vel leo aliquet, id accumsan felis.</p>
+                              </div>
+                              <div class="h-banner-nav-item">
+                                <%= image_tag "info-ico3.png" %>
+                                <h3>Symptom Check</h3>
+                                <p>Morbi consequat lorem vel leo aliquet, id accumsan flis.</p>
+                              </div>
+                              <div class="h-banner-nav-item">
+                                <%= image_tag "info-ico4.png" %>
+                                <h3>Online Help</h3>
+                                <p>Morbi consequat lorem vel leo aliquet, id accumsan felis.</p>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div>
+
+                        <section class="h-about-section scroll-to-block">
+                          <div class="container">
+                            <h2 class="block-title h-block-title">About PharmacyIdentity</h2>
+                            <p class="sub-title h-sub-title">
+                            Duis non condimentum nunc.  Nunc quis turpis eu est tincidunt rutrum.  Cas a purus quis sem tincidunt egestas vel id lacus.
+                           </p>
+                          </div>
+
+                          <div class="h-about-container clearfix">
+                            <div class="col-sm-4 h-about-box">
+                              <div class="h-about-text-wrap">
+                                <div class="h-about-text">
+                                  <h3>Hi Tech Interior</h3>
+                                  <p>
+                                    Vestibulum facilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex.  Etiam sit amet libero consequat, convallis odio ac, vestibulum urnalibero ornare nec.
+                                  </p>
+                                </div>
+                              </div>
+                              <%= image_tag("img-3.jpg", class: "h-img-bottom") %>
+                            </div>
+                            <div class="col-sm-3 h-about-box background-parent" style="background-image: url(<%= asset_path "img-2.jpg" %>) ">
+
+                            </div>
+                            <div class="col-sm-5 h-about-box background-parent" style="background-image: url(<%= asset_path "img-1.jpg" %>) ">
+                              <div class="h-about-info">
+                                <h4>Emergency Department</h4>
+                                <span>facilisis rhoncus tempor</span>
+                              </div>
+                            </div>
+                            <div class="col-sm-3 h-about-box background-parent" style="background-image: url(<%= asset_path "img-4.jpg" %>) ">
+
+                            </div>
+                            <div class="col-sm-4 h-about-box">
+                              <div class="h-about-text">
+                                <h3>Progressive Equipment</h3>
+                                <p>
+                                  Vestibulum favilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex.  Etiam sit amet libero consequat, convallis odio ac, vestibulum urnalibero ornare nec.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-sm-5 h-about-box background-parent" style="background-image: url(<%= asset_path "img-5.jpg" %>) ">
+                              <div class="h-about-info">
+                                <h4>Emergency Department</h4>
+                                <span>facilisis rhoncus tempor</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </section>
+                        <section class="h-services padding-top background-parent scroll-to-block" style="background-image: url(<%= asset_path 'serv-bg.jpg' %>)">
+                          <div class="container">
+                            <h2 class="block-title h-block-title">
+                              Our Services
+                            </h2>
+                            <p class="sub-title h-sub-title">
+                              Dui non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum.  Cras a purus quis sem tincidunt egestas vel id lacus.
+                            </p>
+                            <div class="row">
+                              <div class="col-sm-3 col-serv">
+                                <%= image_tag "serv-ico.png" %>
+                                <h3>Aenean lacinia</h3>
+                                <p>
+                                  Vestibulum facilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus misi sed, pulvinar ex.
+                                <p>
+                              </div>
+                              <div class="col-sm-3 col-serv">
+                                <%= image_tag "serv-ico2.png" %>
+                                <h3>Praesent mollis</h3>
+                                <p>
+                                  Vestibulum facilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus misi sed, pulvinar ex.
+                                </p>
+                              </div>
+                              <div class="col-sm-3 col-serv">
+                                <%= image_tag "serv-ico3.png" %>
+                                <h3>Integer maximus</h3>
+                                <p>
+                                  Vestibulum facilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus misi sed, pulvinar ex.
+                                </p>
+                              </div>
+                              <div class="col-sm-3 col-serv">
+                                <%= image_tag "serv-ico4.png" %>
+                                <h3>Mauris quis maximus</h3>
+                                <p>
+                                  Vestibulum facilisis rhoncus tempor.  Duis non ipsum volutpat, rhoncus misi sed, pulvinar ex.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+
+
+                        <div class="contact block-style scroll-to-block">
+                          <div class="container">
+                            <h2 class="block-title h-block-title">Pre-Register For Big Discounts</h2>
+                            <p class="sub-title h-sub-title">
+                              Duis non condimentum nunc.  Nunc quis turpis eu est tincidunt rutrum.  Cras a purus quis sem tincidunt egestas vel id lacus.
+                            </p>
+                          </div>
+                          <div class="container contact-us h-contact-us">
+                            <div class="row">
+                              <div class="col-md-4 contact-info">
+                                <h5>Address</h5>
+                                <p>Tell us who you are and how to contact you</p>
+                                <h5>Pharmacy Info</h5>
+                                <p>Tell us what pharmacies you use so we can prioritize them</p>
+                              </div>
+                              <div class="col-md-8">
+                                <div id="sp_quickcontact112" class="sp_quickcontact">
+                                  <div id="sp_qc_status">
+
+                                  </div>
+                                  <form id="sp-quickcontact-form" class="red-form">
+                                    <label for="name">Name...</label>
+                                    <input placeholder="Name..." class="input-style" type="text" name="name" id="name" required>
+                                    <label for="email">Email...</label>
+                                    <input placeholder="Email..." class="input-style" type="email" id="email" required>
+                                    <label for="message">Message...</label>
+                                    <textarea placeholder="Tell us what pharacies you use..." class="tx-style" name="message" id="message"></textarea>
+                                    <input id="sp_qc_submit" class="send" type="submit" value="Register">
+
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer h-footer">
+    <div class="container container-footer">
+      <%= image_tag "footer-logo.png" %>
+      <p class="footer-info s-footer-info">
+        Maecenas vitae venenatis lorem.  Pellentesque et lacinia eros, condimentum hendrerit nisl.  In iaculis a nunc a eusmod.  Phasellus aliquam sagittis congue.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
